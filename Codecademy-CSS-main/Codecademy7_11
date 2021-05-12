@@ -1,0 +1,43 @@
+#CSS : flex-wrap
+
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+.container {
+  background-color: dodgerblue;
+  display: flex;
+  align-items: center;
+  min-height: 125px;
+  
+  /* 모든 행에 있는 요소들이 동일한 크기의 공간을 가지면서 배열하게 된다.*/
+  justify-content: space-around;
+}
+
+.box {
+  background-color: whitesmoke;
+  border: 1px solid white;
+  width: 100px;
+  height: 100px;
+}
+
+#wrap {
+  flex-wrap: wrap;
+}
+
+#nowrap {
+  flex-wrap: nowrap;
+}
+
+#reverse {
+  flex-wrap: wrap-reverse;
+}

@@ -1,0 +1,24 @@
+# CSS - creating grids
+
+.grid {
+  border: 2px blue solid;
+  width: 400px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 100px 50% 200px; // grid 공간이 부족하다... (grid 공간을 넘어가버린다)
+  grid-template-rows: 40% 50% 50px;
+  
+  /* grid-template: 40% 50% 50px / 100px 50% 200px;  이런 식으로 쓸 수 있다!*/ 
+  // grid-template: 1fr 1fr 1fr / 3fr 50% 1fr; -> grid 공간을 넘지않고 배열된다.
+  // grid-template: repeat(3, 1fr) / 3fr 50% 1fr; 이런식으로 repeat을 통해 표현
+  // grid-template: repeat(3, 1fr) / 3fr minmax(50px, 300px) 1fr; -> width를 지우고 적용해야 함
+  
+  grid-gap: 20px 5px; // 행 : 20px , 열 : 5px 씩 grid 요소 사이에 margin이 생긴다.
+}
+
+.box {
+  background-color: beige;
+  color: black;
+  border-radius: 5px;
+  border: 2px dodgerblue solid;
+}

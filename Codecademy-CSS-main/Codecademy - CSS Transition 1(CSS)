@@ -1,0 +1,20 @@
+# CSS : Transition
+
+a {
+  display: block;
+  width: 300px;
+  padding: 31px 5px;
+  border-radius: 5px;
+  margin: 20% auto;
+  background-color: orange;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 32px;
+  color: mintcream;
+  transition-property: background-color;  // 마우스를 버튼 위에 올리면 배경 색이 바뀐다.
+  transition-duration: 750ms;             // 색 변화에 걸리는 시간을 0.75초로 설정
+}
+
+a:hover {
+  background-color: limegreen;
+}

@@ -1,0 +1,57 @@
+#CSS : flex-direction
+
+body {
+  margin: 0;
+  border: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.container {
+  background-color: dodgerblue;
+  display: flex;
+  height: 600px;
+  //max-height: 600px;
+  
+  align-items: center; // 수직으로 배열된 녀석들이 가운데로 이동
+  justify-content: space-around; // 수평으로 배열된 녀석들이 같은 크기의 공간을 가지면서 배열됨
+}
+
+.box {
+  background-color: whitesmoke;
+  border: 1px solid white;
+  width: 100px;
+  height: 100px;
+  
+  flex-grow: 1; // 수평으로 배열된 녀석들이 같은 크기의 width를 가지면서 container의 width에  배열된다.
+}
+
+/*행과 열로 각각 배열되었을 때, 비교해보자. reverse같은 경우, 반대에서 부터 배열된다.*/
+
+#row {
+  flex-direction: row;
+}
+
+#row-reverse {
+  flex-direction: row-reverse;
+}
+
+#column {
+  flex-direction: column;
+}
+
+#column-reverse {
+  flex-direction: column-reverse;
+}

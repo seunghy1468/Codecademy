@@ -1,0 +1,26 @@
+<!DOCTYPE html> <!-- 브라우저용 html 버전 선언-->
+<html>          <!-- html-->
+<body>
+  <div>
+    <h1> Bears </h1>
+  </div>
+  
+  <div>
+    <h2> Black Bear </h2>
+      <p>
+        <span>
+          Black Bear
+        </span> 
+        is very <strong>cute</strong>.
+      </p>
+  </div>
+  
+  <div>
+    <h3> Features </h3>
+  </div>
+  
+  <div>
+    <h3> Movies </h3>
+  </div>
+</body>
+</html>

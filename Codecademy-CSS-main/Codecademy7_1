@@ -1,0 +1,36 @@
+#CSS
+
+body {
+  margin: 0;
+  border: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  font-size: 18px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.container {
+  background-color: whitesmoke;
+  width: 150px;
+  border: 1px solid grey;
+  display: inline-flex;
+}
+
+.box {
+  background-color: Dodgerblue;
+  height: 100px;
+  width: 100px;
+  border: 1px solid lightgrey;
+}
+
+#flex {
+// display 속성을 flex로 표현
+  display: flex;
+}

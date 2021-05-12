@@ -1,0 +1,84 @@
+#CSS 
+
+p {
+  font-family: Arial;
+  // color는 명칭, hex, rgb로 표현 
+  color: #ef3dae;
+}
+
+// 변경우선순위 : id > .name(.title, .brand 등 class) > name(p, h1 등 tag)
+
+h1 {
+  color: maroon;
+}
+
+.title {
+  color: teal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.publish-time {
+  //class는 .으로 표현
+  color: gray;
+}
+
+#article-title {
+  // id는 #으로 표현
+font-family: cursive;
+text-transform: capitalize;
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+h2.destination {
+  //h2 tag 중, destination class만 적용
+  font-family: cursive;
+  
+.description h5{
+  //Nested Elements
+  // div의 class가 description이고, 그 안에 있는 h5만 적용 (li같은 것도 가능)
+  color: teal;
+}
+
+h5 {
+  color: rebeccapurple;
+}
+
+h5, p {
+  // h5와 p tag 모두 적용 {각자 작성 안해도 됨)
+  font-family: Georgia;
+}
+
+// 이런식으로 li 안에 h4요소들 모두 설정. (앞 : parent, 뒤 : child)
+li h4 {
+  color: gold;
+}
+
+// universal elements에 적용!
+* {
+  border: 1px solid red;
+}
+
+// 모든 href 속성에 적용된다.
+[href]{
+   color: magenta;
+   }
+   
+// 이런식으로 img의 요소(winter.jpg가 html에 있을 )를 개별적으로 선택할 수 있다.   
+img[src*='winter'] {
+  height: 50px;
+}
+
+// 이런식으로 마우스를 해당 요소에 올릴 때, 다크오렌지 색깔로 
+a:hover {
+  color: darkorange;
+}

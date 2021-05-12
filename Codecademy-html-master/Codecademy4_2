@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Range Input</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <hr>
+      <form>
+        <h1>Create a burger!</h1>
+				<section class="protein">
+          <label for="patty">What type of protein would you like?</label>
+    			<input type="text" name="patty" id="patty">
+        </section>
+        <hr>
+        <section class="patties">
+          <label for="amount">How many patties would you like?</label>
+          <input type="number" name="amount" id="amount">
+        </section>
+        <hr>
+				<!-- type=number 대신 숫자의 범위를 제한할 때, range를 사용한다. min, max, step 정해주어야 함-->
+        <section class="cooked">
+          <label for="doneness">How do you want your patty cooked</label>
+          <br>
+          <span>Rare</span>
+		       <!--Add your code below-->
+          <input id="doneness"
+           name="doneness" type="range"
+           min="0" max="5" step="0.5">
+          
+          <span>Well-Done</span>
+	  
+	  <p> What toppings would you like?</p>
+	  <label for="lettuce">Lettuce</label>
+          <input id="lettuce" 
+          name="topping" type="checkbox"
+          value="lettuce">
+          <br>
+          <!--Add your code below for the second checkbox, name은 같아도 고유의 id가 있다!-->
+		
+          <label for="tomato">Tomato</label>
+          <input id="tomato" 
+          type="checkbox" name="topping"
+          value="tomato">
+          <br>
+          <!--Add your code below for the third checkbox-->
+          <label for="onion">Onion</label>
+          <input id="onion"
+          type="checkbox" name="topping"
+          value="onion">
+        </section>
+	
+	<!--section : div와 비슷한 역할, radio : 하나만 택일 하도록 함-->
+	<section class="cheesy">
+          <span>Would you like to add cheese?</span>
+          <br>
+	        <!--Add your first radio button below-->
+          <input id="yes" type="radio"
+          name="cheese" value="yes">
+          <label for="yes">Yes</label>
+	        <!--Add your second radio button below-->
+          <input id="no" type="radio"
+          name="cheese" value="no">
+          <label for="no">No</label>
+        </section>
+	
+	
+        <section class="bun-type">
+	    <label for="bun">What type of bun would you like?</label>
+          <!--Add your code below, dropdown이랑 radio 적절하게 선택! 선택 폭이 넓어지면 radio는 일일히 다 label, name 지정해야함...-->
+   	    <select id="bun" name="bun">
+            <option value="sesame">
+              Sesame</option>
+            <option value="potato">
+              Potato</option>
+            <option value="cucumber">
+              Cucumber</option>
+          </select>
+        </section>
+	
+	<section class="sauce-selection">
+	  <label for="sauce">What type of sauce would you like?</label>
+          <input list="sauces" id="sauce" name="sauce">
+          <!--Add your code below, datalist와 select는 
+          유사하지만, datalist는 검색기능이 있다.-->
+	    <datalist id="sauces">
+              <option value="ketchup"></option>
+              <option value="mayo"></option>
+              <option value="chille"></option>
+	    </datalist>
+	 </section>
+	 
+	 <!-- textarea : 더 많은 text를 입력할 수 있도록 함. rows, cols의 크기를 정함-->
+	 <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+        <hr>
+
+	<!--type을 submit으로 지정하여 제출버튼을 만듦.-->
+        <section class="submission">
+          <!--Add your code below-->
+          <input type="submit" value="Submit">
+        </section>
+        
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+# CSS
+
+/* Universal Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: white;
+}
+
+p {
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Banner Section */
+
+#banner {
+  height: 46rem;
+  background-image: url('camel-background.png');  // 배경 이미지 설정
+  background-position: center;                    // 이미지를 요소 중심에 맞춘다.
+  background-size: cover;                         // 영상이 요소 크기를 초과하면 초과하지 않는 범위만 
+  background-repeat: no-repeat;                   // 컴파일러가 이미지를 반복하지 않게 한다.
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#banner h1 {
+  font-size: 3.75rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 1.5em;
+}
+
+/* Blog Post */
+
+#blog {
+  width: 86%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#blog .post {
+  width: 52%;
+  margin-top: 12.5%;
+  margin-bottom: 7.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.8;
+  color: #444444;
+}
+
+.post h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.post h3 {
+  font-size: 1.125rem;
+  color: #999999;
+}
+
+.post .opening-line {
+  margin-top: 4.1875rem;
+  margin-bottom: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+.post p,
+.post .image-container {
+  margin-bottom: 2rem;
+}
+
+.post .image-container {
+  width: 100%;
+}
+
+/* Blog Images */
+
+.image-container {
+  overflow: hidden;   // overflow 된 부분을 안보이게 한다
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;       // 홈페이지를 작은 화면으로 볼 때, 요소의 크기도 화면의 크기에 맞게 작아지도록 한다. 
+  display: block;
+  
+}
+
+.images {
+  margin-bottom: 20%;
+}
+
+.images .image-container {
+  display: inline-block;
+  width: 50%;     // 사진 두개가 같은 너비로 나란히 배치된다.
+}
+
+/* Footer */
+
+footer {
+  padding: 4rem 0;
+  border-top: 1px solid #999999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  color: #999999;
+  text-align: center;
+}
