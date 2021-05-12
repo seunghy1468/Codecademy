@@ -1,5 +1,5 @@
 # Codecademy
-  * Codecademy에서 강의 들은 것 정리
+  * Codecademy에서 강의 들은 것 text로정리
     * html
       * html의 명령어 및 연습으로 만들었던 web html 정리
     
