@@ -232,6 +232,12 @@ flex-flow : flex-wrap, flex-direction 속성을 한줄로 선언할 때 사용
 
 flex container들은 display: flex or display: inline-flex을 중첩어 선언할 수 있다.
 
+```
+align-content는 여러 줄들 사이의 간격을 지정하며, 
+align-items는 컨테이너 안에서 어떻게 모든 요소들이 정렬하는지를 지정한다.
+한 줄만 있는 경우, align-content는 효과 x
+반드시 비교할 수 있어야 한다.
+
 -------------------------------------------------------------------------
 2021.04.09~2021.04.12 learn of CSS (chapter 8) : CSS Grid
 
