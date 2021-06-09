@@ -71,30 +71,30 @@
 	p>lorem    
 	p>lorem4 // 이런식으로 단어 개수 조절 가능   
 
-2021.03.22 html course in Codecademy (chapter1) 
+* 2021.03.22 html course in Codecademy (chapter1) 
 body, head, h, p, img, video, title, span, strong, em, vh    
 vh : 부모의 크기와 상관없이 100% 사용하겠다.   
 
-2021.03.23 html course in Codecademy (chapter2)
+* 2021.03.23 html course in Codecademy (chapter2)
 !DOCTYPE html, html, table, thead, tbody
 
-2021.03.23 html course in Codecademy (chapter3)
+* 2021.03.23 html course in Codecademy (chapter3)
 form, label, input, text, password
 
-2021.03.26 html course in Codecademy (chapter4)
+* 2021.03.26 html course in Codecademy (chapter4)
 hr, section, option, number, range(min, max (number)), checkbox, radio 
 
-2021.03.27 html course in Codecademy (chapter4)
+* 2021.03.27 html course in Codecademy (chapter4)
 select, datalist, textarea, submit   
 purpose of a form : users can input information and sent it.   
 action : form's information이 어디로 이동하는지 결정한다.   
 method : information을 어떻게 처리하고 보낼지 결정한다.   
 
-2021.03.27 html course in Codecademy (chapter5)
+* 2021.03.27 html course in Codecademy (chapter5)
 validation, required : you must fill out here. , minlength, maxlength (text), pattern   
 server-side verification // client-side verification : 정보를 서버로 전송하기 전에 브라우저에서 수행
 
-2021.03.27 html course in Codecademy (chapter6)
+* 2021.03.27 html course in Codecademy (chapter6)
 semantic vs non-semantic 비교!!
 
-div --> header, nav, main, footer, section, article, aside, figure, figcaption, audio, source, video, embed
+* div --> header, nav, main, footer, section, article, aside, figure, figcaption, audio, source, video, embed
